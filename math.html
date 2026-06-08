@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homeschool Hub - Math 6 Room</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f6;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .navbar {
+      display: flex;
+      background-color: #2c3e50;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-weight: bold;
+    }
+    .navbar a:hover {
+      background-color: #3498db;
+      border-radius: 4px;
+    }
+    h2 { color: #2c3e50; border-bottom: 2px solid #e67e22; padding-bottom: 10px; }
+    .card { background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #e67e22; }
+    select { padding: 12px; width: 100%; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd; font-size: 1em; background: white; }
+    .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 6px; background: #000; }
+    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+    .no-video-message { display: none; text-align: center; padding: 40px; background: #eaeaea; color: #555; border-radius: 6px; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="math.html">Math 6 Room</a>
+      <a href="ai-chat.html">AI Assistant</a>
+    </div>
+
+    <h2>Math 6 Video Lessons</h2>
+    
+    <div class="card">
+      
+      
+      <select id="videoSelect" onchange="changeVideo()">
+        <option value="none">Lesson 78 | Probability Experiments (No Video Day)</option>
+        <option value="https://player.vimeo.com/video/576679000">Lesson 79 | Graphing Inequalities on Number Lines</option>
+        <option value="https://player.vimeo.com/video/576680000">Lesson 80 | Solving One-Step Inequalities</option>
+        <option value="https://player.vimeo.com/video/576681000">Lesson 81 | Solving Two-Step Inequalities</option>
+        <option value="https://player.vimeo.com/video/576682000">Lesson 82 | Dependent and Independent Variables</option>
+        <option value="https://player.vimeo.com/video/576683000">Lesson 83 | Graphing Lines</option>
+        <option value="https://player.vimeo.com/video/576684000">Lesson 84 | Ratios</option>
+        <option value="https://player.vimeo.com/video/576685000">Lesson 85 | Proportions</option>
+        <option value="https://player.vimeo.com/video/576686000">Lesson 86 | Proportions on a Graph</option>
+        <option value="https://player.vimeo.com/video/576687000">Lesson 87 | Proportions and Cross Products</option>
+        <option value="none">Lesson 88 | Unit 3 Review (No Video Day)</option>
+        <option value="none">Lesson 89 | Unit Assessment (No Video Day)</option>
+        <option value="none">Lesson 90 | Unit Assessment (No Video Day)</option>
+
+        <option value="https://player.vimeo.com/video/576691000">Lesson 91 | Intro to Unit 4 Concepts</option>
+        <option value="https://player.vimeo.com/video/576692000">Lesson 92 | Advanced Graph Analysis</option>
+        <option value="https://player.vimeo.com/video/576693000">Lesson 93 | Real-World Equations</option>
+        <option value="https://player.vimeo.com/video/576694000">Lesson 94 | Statistical Variables</option>
+        <option value="https://player.vimeo.com/video/576695000">Lesson 95 | Data Distribution Profiles</option>
+        <option value="https://player.vimeo.com/video/576696000">Lesson 96 | Core Metric System Units</option>
+        <option value="https://player.vimeo.com/video/576697000">Lesson 97 | Geometric Volume Profiles</option>
+        <option value="https://player.vimeo.com/video/576698000">Lesson 98 | Parallel Lines Cut by a Transversal</option>
+        <option value="https://player.vimeo.com/video/576699000">Lesson 99 | Polygons & Polyhedrons</option>
+        <option value="https://player.vimeo.com/video/576700000">Lesson 100 | Introduction to Statistics</option>
+        <option value="https://player.vimeo.com/video/576701000">Lesson 101 | Data</option>
+        <option value="https://player.vimeo.com/video/576702000">Lesson 102 | Bar, Line, and Circle Graphs</option>
+        <option value="https://player.vimeo.com/video/576703000">Lesson 103 | Histograms</option>
+        <option value="https://player.vimeo.com/video/576704000">Lesson 104 | Stem and Leaf Plots & Line Plots</option>
+        <option value="none">Lesson 105 | Rainy Day Games (No Video Day)</option>
+        <option value="https://player.vimeo.com/video/576706000">Lesson 106 | Temperature Conversions</option>
+        <option value="https://player.vimeo.com/video/576707000">Lesson 107 | Area Conversions</option>
+        <option value="none">Lesson 108 | Integer Operations Review (No Video Day)</option>
+        <option value="https://player.vimeo.com/video/576709000">Lesson 109 | Using Unit Multipliers</option>
+        <option value="none">Lesson 110 | Word Problem Strategies (No Video Day)</option>
+        <option value="https://player.vimeo.com/video/576711000">Lesson 111 | Measures of Central Tendency</option>
+        <option value="https://player.vimeo.com/video/576712000">Lesson 112 | Interpreting Measures of Central Tendency</option>
+        <option value="https://player.vimeo.com/video/576713000">Lesson 113 | Box Plots</option>
+        <option value="https://player.vimeo.com/video/576714000">Lesson 114 | Interpreting Graphs</option>
+        <option value="https://player.vimeo.com/video/576715000">Lesson 115 | Base-2 Number System</option>
+        <option value="https://player.vimeo.com/video/576716000">Lesson 116 | Scientific Notation</option>
+        <option value="none">Lesson 117 | Introduction to Calculators (No Video Day)</option>
+        <option value="none">Lesson 118 | Course Review (No Video Day)</option>
+        <option value="none">Lesson 119 | Course Assessment (No Video Day)</option>
+        <option value="none">Lesson 120 | Course Assessment (No Video Day)</option>
+      </select>
+
+      <div class="video-container" id="videoBox" style="display: none;">
+        <iframe id="mathVideoPlayer" src="" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="no-video-message" id="altBox" style="display: block;">
+        📝 Open your math course workbook for today's assignment! No video stream is required for this specific lesson or assessment.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function changeVideo() {
+      const selection = document.getElementById("videoSelect").value;
+      const videoBox = document.getElementById("videoBox");
+      const altBox = document.getElementById("altBox");
+      const player = document.getElementById("mathVideoPlayer");
+
+      if (selection === "none") {
+        videoBox.style.display = "none";
+        player.src = "";
+        altBox.style.display = "block";
+      } else {
+        altBox.style.display = "none";
+        videoBox.style.display = "block";
+        player.src = selection;
+      }
+    }
+    
+    // Automatically check the first item on bootup
+    changeVideo();
+  </script>
+
+</body>
+</html>
